@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <style>
+        html,body {
+            height:100%;
+        }
+        header {
+            background-color: rgb(0, 101, 20); color:white; padding:20px;
+            height: 10%;
+        }
+        nav{
+            padding:5px;
+            background-color:rgb(139, 213, 147);
+            color:white;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            padding-left: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        section {
+            background-color: rgb(247, 247, 194);
+            padding:5px;
+            float:left;
+            width:65%;
+            text-align: center;
+        }
+        section img {
+            float: left;
+            width: 40%;
+            padding-bottom: 2%;
+        }
+        aside {
+            background-color: rgb(210, 248, 222);
+            padding:5px;
+            float:right;
+            width:33%;
+        }
+        #h3 {
+            clear: both;
+        }
+        footer {
+        clear:both;
+        background-color: rgb(189, 189, 168);
+        }
+        footer ul {
+            list-style: none;
+        }
+        footer ul li {
+            color: white;
+            display: inline;
+            padding-left: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Veggie Shop</h1>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="#fruits" target="_blank"> Fresh Fruits </a></li>
+            <li><a href="#veggies"> Fresh Veggies </a></li>
+            <li><a href="#salads">Fresh Salads</a></li>
+            <li>Seeds and Nuts</li>
+            <li>Gift Box</li>
+           
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+        <h1>탐스럽게 익은 신선한 사과, 한 입의 상쾌함!</h1>
+
+        <img src="image/apple2.jpg" width="300">
+
+        <form action="index.php" method="get">
+            선호지역: 
+            <input type="radio" name="location" value="andong"> 안동 
+            <input type="radio" name="location" value="chungju"> 충주<br>
+            <input type="radio" name="location" id="munkyung"> 문경 
+            <input type="radio" name="location" id="chungsong"> 청송<br>
+            <br>
+            수량: 
+            <select name="price">
+                <option value="5000">500g 5000원</option>
+                <option value="5000">500g 5000원</option>
+                <option value="5000">500g 5000원</option>
+                <option value="5000">500g 5000원</option>
+                <option value="5000">500g 5000원</option>
+                <option value="5000">500g 5000원</option>
+            </select><br>
+            <br>
+            <input type="submit" value="장바구니" onclick="alert('장바구니에 정상적으로 담겼습니다!')">
+            <input type="submit" value="구매하기">
+        </form>
+        <br>
+        <h3 id="h3">지금 막 수확한 달고 아삭한 사과,<br>입안 가득 퍼지는 자연의 맛을 느껴보세요.</h3>
+    </article>
+    </section>
+
+    <aside>
+        <h3>광고</h3>
+        <h4>땅에서 식탁까지, 신선함 그래로!</h4>
+        <p>가장 가까운 농장에서 바로 당신의 집으로!</p>
+        
+        <a href="#"><img src="image/delivery.jpg" width="300"></a>
+        <a href="#"><img src="image/farm.jpg" width="300"></a>
+        <p>오늘 수확한 신선한 야채와 채소를 매일 바로 배달해 드립니다.</p>
+        <ul>
+            <li>매일 아침 수확한 채소</li>
+            <li>현지 농장에서 직배송</li>
+            <li>환경을 생각한 로컬 푸드</li>
+            <li>신선도 100% 보장</li>
+            <li>주문 후 바로 배송</li>
+        </ul>
+        <p>귀한 손님을 위한 특별한 식탁, 건강한 일상을 위한 신선함을 누려보세요.</p>
+    </aside>
+
+    <footer>
+        <ul>
+            <li> 회사소개</li>
+            <li> 개인정보보호정책</li>
+            <li> 인재채용</li>
+            <li> 공지사항</li>
+            <li> Q&amp;A</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
